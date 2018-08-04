@@ -1,0 +1,17 @@
+body {
+	width: 160px;
+}
+
+div#main {
+	margin: 15px 5px 0px;
+}
+
+p {
+	margin-top: 10px;
+}
+
+.animevsub {
+	font-weight: bold;
+	font-size: 18px;
+	color: orange;
+}

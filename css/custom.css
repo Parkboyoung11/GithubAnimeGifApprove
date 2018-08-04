@@ -1,0 +1,26 @@
+aside {
+	display: none !important;
+}
+
+#media-player-box {
+	width: 1280px !important;
+    height: 770px !important;
+}
+
+.Container {
+	max-width: none !important;
+}
+
+.TpRwCont>main {
+	padding-right: 0 !important;
+}
+
+.Body .Content {
+	padding: 0 !important;
+	margin: auto !important;
+    max-width: 1280px !important;
+}
+
+body {
+    background-color: black !important;
+}
