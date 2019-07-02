@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "9fuy ✪ Anime VSub",
-  "description": "Custom to watch anime at animevsub.tv",
+  "name": "9fuy ✪ LGTM GIF",
+  "description": "Approve with anime gif",
   "author": "9fury",
   "version": "1.0",
 
@@ -22,22 +22,33 @@
     "webRequest",
     "webRequestBlocking",
     "<all_urls>",
-    "*://animevsub.tv/*"
+    "*://github.com/*"
   ],
 
-  "content_scripts": [{
-    "css": ["css/custom.css"],
-    "js": ["js/custom.js"],
-    "matches": ["*://animevsub.tv/*"]
-  }],
+  "content_scripts": [
+    {
+      "css": ["css/custom.css"],
+      "js": ["js/custom.js"],
+      "matches": ["*://github.com/*"]
+    },
+    {
+      "css": ["css/kirito.css"],
+      "js": ["js/kirito.js"],
+      "matches": ["*://github.com/Parkboyoung11*"]
+    }
+  ],
 
   "web_accessible_resources": [
     "js/BeautyScroll.js"
   ],
 
-  "browser_action": {
-    "default_icon": "icon/icon16.png",
-    "default_popup": "popup.html"
+  "page_action": {
+    "default_icon": {
+      "16": "icon/icon16.png",
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
+    },
+    "default_popup": "popup.html" 
   },
 
   "content_security_policy": "script-src 'self' 'unsafe-eval' https://maxcdn.bootstrapcdn.com https://apis.google.com https://ajax.googleapis.com https://cdnjs.cloudflare.com; object-src 'self'",
